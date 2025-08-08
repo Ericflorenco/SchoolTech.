@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SchoolTech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Fundo animado */
+    body {
+      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Container central */
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #00ffd5;
+      text-shadow: 0 0 10px #00ffd5;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+
+    .links a {
+      margin: 0 15px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: #00ffd5;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .links a:hover {
+      color: #ffffff;
+      transform: scale(1.2);
+    }
+
+    img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    /* Texto de rodapé */
+    .footer {
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      font-size: 1rem;
+      text-align: center;
+      color: #ddd;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .links a {
+        font-size: 1.2rem;
+      }
+
+      img {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="line.png" alt="Logo Linux">
+    <h1>SchoolTech</h1>
+    <p>Seja bem-vindo ao meu espaço na web 🌐</p>
+    <div class="links">
+      <a href="https://github.com/pedroewee" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/pedro_ewee/" target="_blank">youtube</a>
+      <a href="mailto:schooltechsenac@gmail.com">Email</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    Este projeto tem como objetivo democratizar o acesso à tecnologia nas escolas públicas do Brasil, com foco na instalação de sistemas operacionais gratuitos como o Linux e o uso de suítes de escritório acessíveis. <br><br>
+    Estamos comparando soluções como LibreOffice, OnlyOffice e FreeOffice para identificar a que oferece mais benefícios em termos de usabilidade, acessibilidade e compatibilidade com arquivos populares como .docx, .xlsx e .pptx.
+  </div>
+</body>
+</html>
